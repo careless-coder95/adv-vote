@@ -286,14 +286,14 @@ async def _finalize(update, context, data: dict):
         "both": f"🔀 {f('Free + Paid')}",
     }
     text = (
-        f"🎉 *{f('Giveaway Created!')}*\n\n"
+        f"🎉 *{f('Giveaway Created!')}*\n"
         f"━━━━━━━━━━━━━━━━━━━━━━\n"
         f"🆔 *{f('ID')}:* `{gid}`\n"
         f"📡 *{f('Channel')}:* {data.get('channel_name', '')}\n"
         f"🗳️ *{f('Voting')}:* {vmap.get(data.get('voting_type', 'free'), '?')}\n"
         + (f"💸 *{f('Rate')}:* ₹1 = {data.get('votes_per_rupee', 0)} {f('votes')}\n" if data.get('votes_per_rupee') else "")
         + (f"🎯 *{f('Auto-End at')}:* {data.get('min_votes', 0)} {f('votes')}\n" if data.get('min_votes') else "")
-        + f"━━━━━━━━━━━━━━━━━━━━━━\n\n"
+        + f"━━━━━━━━━━━━━━━━━━━━━━\n"
         f"🔗 *{f('Join Link')}:*\n`{join_link}`\n\n"
         f"_{f('Share this link with participants!')}_"
     )
