@@ -294,7 +294,7 @@ async def _finalize(update, context, data: dict):
         + (f"💸 *{f('Rate')}:* ₹1 = {data.get('votes_per_rupee', 0)} {f('votes')}\n" if data.get('votes_per_rupee') else "")
         + (f"🎯 *{f('Auto-End at')}:* {data.get('min_votes', 0)} {f('votes')}\n" if data.get('min_votes') else "")
         + f"━━━━━━━━━━━━━━━━━━━━━━\n\n"
-        f"🔗 *{f('Join Link')}:*\n`{join_link}`\n\n"
+        f"🔗 *{f('Join Link')}:*\n {join_link} \n\n"
         f"_{f('Share this link with participants!')}_"
     )
 
