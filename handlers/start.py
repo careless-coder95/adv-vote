@@ -25,9 +25,9 @@ def _main_kb():
 def _main_caption(user, bot_name="Giveaway Bot"):
     return (
         f"👋 *{f('Welcome')}, {user.first_name}!*\n\n"
-        f"╔═══════════════════════╗\n"
+        f"╔════════════════════╗\n"
         f"║  🎉  *{f(bot_name.upper())}*  ║\n"
-        f"╚═══════════════════════╝\n\n"
+        f"╚════════════════════╝\n\n"
         f"━━━━━━━━━━━━━━━━━━━━━━\n"
         f"✨ *{f('What You Can Do')}:*\n\n"
         f"🎯 {f('Create live giveaways in your channel')}\n"
@@ -36,7 +36,7 @@ def _main_caption(user, bot_name="Giveaway Bot"):
         f"🎊 {f('Auto milestone announcements')}\n"
         f"🔒 {f('Control participation anytime')}\n\n"
         f"━━━━━━━━━━━━━━━━━━━━━━\n\n"
-        f"_*{f('Choose an option below')}*_ 👇"
+        f"_{f('Choose an option below')}_ 👇"
     )
 
 
@@ -124,9 +124,9 @@ async def handle_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
         bot_name = bot_info.first_name or "Giveaway Bot"
         text = (
             f"ℹ️ *{f('About')} — {f(bot_name)}*\n\n"
-            f"╔═══════════════════════╗\n"
+            f"╔════════════════════╗\n"
             f"║  🎉  *{f('GIVEAWAY BOT')}*  ║\n"
-            f"╚═══════════════════════╝\n\n"
+            f"╚════════════════════╝\n\n"
             f"━━━━━━━━━━━━━━━━━━━━━━\n"
             f"🌟 *{f('Features')}:*\n\n"
             f"• {f('Live giveaways in your channel')}\n"
@@ -138,7 +138,7 @@ async def handle_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
             f"━━━━━━━━━━━━━━━━━━━━━━\n"
             f"👥 *{f('Total Users')}:* {total}\n"
             f"━━━━━━━━━━━━━━━━━━━━━━\n\n"
-            f"_*{f('For support or to contact owner, use buttons below')}*_ 👇"
+            f"_{f('For support or to contact owner, use buttons below')}_ 👇"
         )
         kb = InlineKeyboardMarkup([
             [
