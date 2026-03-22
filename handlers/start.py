@@ -9,15 +9,15 @@ from database import users_col
 def _main_kb():
     return InlineKeyboardMarkup([
         [
-            InlineKeyboardButton("🎉 New Giveaway",   callback_data="menu_newgiveaway"),
-            InlineKeyboardButton("📋 My Giveaway",    callback_data="menu_mygiveaway"),
+            InlineKeyboardButton("🎉 ɴᴇᴡ ɢɪᴠᴇᴀᴡᴀʏ",   callback_data="menu_newgiveaway"),
+            InlineKeyboardButton("📋 ᴍʏ ɢɪᴠᴇᴀᴡᴀʏ",    callback_data="menu_mygiveaway"),
         ],
         [
-            InlineKeyboardButton("📢 Add in Channel", callback_data="menu_addchannel"),
-            InlineKeyboardButton("👥 Add in Group",   callback_data="menu_addgroup"),
+            InlineKeyboardButton("📢 ᴀᴅᴅ ɪɴ ᴄʜᴀɴɴᴇʟ", callback_data="menu_addchannel"),
+            InlineKeyboardButton("👥 ᴀᴅᴅ ɪɴ ɢʀᴏᴜᴘ",   callback_data="menu_addgroup"),
         ],
         [
-            InlineKeyboardButton("ℹ️ About",          callback_data="menu_about"),
+            InlineKeyboardButton("ℹ️ ᴀʙᴏᴜᴛ ᴜs",          callback_data="menu_about"),
         ],
     ])
 
@@ -142,10 +142,10 @@ async def handle_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
         )
         kb = InlineKeyboardMarkup([
             [
-                InlineKeyboardButton("🛠️ Support", url=SUPPORT_URL),
-                InlineKeyboardButton("📢 Update",  url=UPDATE_URL),
+                InlineKeyboardButton("⌯ sᴜᴘᴘᴏꝛᴛ ⌯", url=SUPPORT_URL),
+                InlineKeyboardButton("⌯ ᴜᴘᴅᴧᴛᴇ ⌯",  url=UPDATE_URL),
             ],
-            [InlineKeyboardButton("👑 Owner", url=OWNER_URL)],
+            [InlineKeyboardButton("⌯ ᴏᴡηᴇꝛ ⌯", url=OWNER_URL)],
             [InlineKeyboardButton("🔙 Back",  callback_data="menu_back")],
         ])
         try:    await query.edit_message_caption(text, parse_mode="Markdown", reply_markup=kb)
