@@ -26,7 +26,7 @@ def _main_caption(user, bot_name="Giveaway Bot"):
     return (
         f"👋 *{f('Welcome')}, {user.first_name} 💕*\n"
         f"╔═══════════════════╗\n"
-        f"║  🎉 ɪ ᴀᴍ *{f(bot_name.upper())}*              ║\n"
+        f"║  🎉 ɪ ᴀᴍ *{f(bot_name.upper())}* 🥳           ║\n"
         f"╚═══════════════════╝\n"
         f"━━━━━━━━━━━━━━━━━━━━━━\n"
         f"✨ *{f('What You Can Do')}:*\n\n"
@@ -124,7 +124,7 @@ async def handle_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
         bot_name = bot_info.first_name or "Giveaway Bot"
         text = (
             f"╔════════════════════╗\n"
-            f"║  🎉  *{f('ABOUT GIVEAWAY BOT')}*         ║\n"
+            f"║  🎉  *{f('ABOUT GIVEAWAY BOT')}*        ║\n"
             f"╚════════════════════╝\n"
             f"━━━━━━━━━━━━━━━━━━━━━━\n"
             f"🌟 *{f('Features')}:*\n\n"
