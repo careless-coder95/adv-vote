@@ -24,10 +24,10 @@ def _main_kb():
 
 def _main_caption(user, bot_name="Giveaway Bot"):
     return (
-        f"╔════════════════════╗\n"
-        👋 *{f('Welcome')}, {user.first_name}!*\n"
-        f"  🎉  *{f(bot_name.upper())}*"
-        f"╚════════════════════╝\n"
+        f"👋 *{f('Welcome')}, {user.first_name}!*\n"
+        f"╔═══════════════════╗\n"
+        f"║  🎉  *{f(bot_name.upper())}*           ║\n"
+        f"╚═══════════════════╝\n"
         f"━━━━━━━━━━━━━━━━━━━━━━\n"
         f"✨ *{f('What You Can Do')}:*\n\n"
         f"🎯 {f('Create live giveaways in your channel')}\n"
