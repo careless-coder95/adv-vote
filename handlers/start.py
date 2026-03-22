@@ -36,7 +36,7 @@ def _main_caption(user, bot_name="Giveaway Bot"):
         f"🎊 {f('Auto milestone announcements')}\n"
         f"🔒 {f('Control participation anytime')}\n\n"
         f"━━━━━━━━━━━━━━━━━━━━━━\n\n"
-        f"_{f('Choose an option below')}_ 👇"
+        f"_*{f('Choose an option below')}*_ 👇"
     )
 
 
@@ -83,7 +83,7 @@ async def handle_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
         bot_username = (await context.bot.get_me()).username
         text = (
             f"📢 *{f('Add Bot to Channel')}*\n\n"
-            f"{f('Make the bot admin with these permissions')}:\n\n"
+            f"{f('📝 Make the bot admin with these permissions')}:\n\n"
             f"• {f('Post Messages')} ✅\n"
             f"• {f('Edit Messages')} ✅\n"
             f"• {f('Delete Messages')} ✅\n"
@@ -103,7 +103,7 @@ async def handle_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
         bot_username = (await context.bot.get_me()).username
         text = (
             f"👥 *{f('Add Bot to Group')}*\n\n"
-            f"{f('Make the bot admin with these permissions')}:\n\n"
+            f"{f('📝 Make the bot admin with these permissions')}:\n\n"
             f"• {f('Post Messages')} ✅\n"
             f"• {f('Delete Messages')} ✅\n"
             f"• {f('Add Members')} ✅"
@@ -138,7 +138,7 @@ async def handle_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
             f"━━━━━━━━━━━━━━━━━━━━━━\n"
             f"👥 *{f('Total Users')}:* {total}\n"
             f"━━━━━━━━━━━━━━━━━━━━━━\n\n"
-            f"_{f('For support or to contact owner, use buttons below')}_ 👇"
+            f"_*{f('For support or to contact owner, use buttons below')}*_ 👇"
         )
         kb = InlineKeyboardMarkup([
             [
