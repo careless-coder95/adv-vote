@@ -216,7 +216,7 @@ async def handle_create_cb(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # ── Cancel ──────────────────────────────
     if action == "create_cancel":
         context.user_data.pop("cg", None)
-        text = f"❌ *{f('Cancelled.')}*\n\n{f('Use /start to go back.')}"
+        text = f"❌ *{f('Cancelled.')}*\n\n{f('Use start to go back.')}"
         try:
             await query.edit_message_text(text, parse_mode="Markdown")
         except Exception:
