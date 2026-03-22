@@ -45,12 +45,12 @@ def build_participant_buttons(gid, pid, post_link, paid):
 def format_participant_post(name, user_id, username, bot_username):
     uname = f"@{username}" if username else "ɴ/ᴧ"
     return (
-        f"[⚡] *{f('PARTICIPANT DETAILS')}*\n\n"
+        f"[📝] *{f('PARTICIPANT DETAILS')}*\n\n"
         f"‣  {f('Name')}: {name}\n"
         f"‣  {f('User-Id')}: `{user_id}`\n"
         f"‣  {f('Username')}: {uname}\n\n"
         f"_{f('Note')}: {f('Only channel subscribers can vote')}_\n\n"
-        f"@{bot_username}"
+        f"⚡ {f('Powered by')} : @{bot_username}"
     )
 
 async def check_membership(bot, channel_id, user_id):
